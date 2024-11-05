@@ -1,0 +1,50 @@
+﻿<Window x:Class="test_gyakorlas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test_gyakorlas"
+        mc:Ignorable="d"
+        Title="Grid test" Height="450" Width="800" Background="#323232">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Kolbász" Foreground="White"/>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Text="Paprika"  Foreground="White" TextAlignment="center"/>
+        <TextBlock Grid.Column="3" Text="Sajt" Foreground="White" TextAlignment="Center"/>
+        <StackPanel Grid.RowSpan="3" Grid.Row="1">
+            <TextBlock Text="alma" Foreground="White"/>
+            <TextBlock Text="körte" Foreground="White"/>
+            <TextBlock Text="banán" Foreground="White"/>
+            <TextBlock Text="paradicsom" Foreground="White"/>
+        </StackPanel>
+        <TextBox Grid.ColumnSpan="3" Grid.Column="1" Grid.Row="1" Text="Textbox"/>
+        <Button Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Content="Button"></Button>
+        <StackPanel Grid.ColumnSpan="3" Grid.Row="3" Grid.Column="1">
+            <TextBlock Text="fehér" Foreground="White"/>
+            <TextBlock Text="sárga" Foreground="Yellow"/>
+            <TextBlock Text="piros" Foreground="Red"/>
+            <TextBlock Text="kolbász" Foreground="White"/>
+        </StackPanel>
+        
+        <Border Background="White" Width="140" Height="100" CornerRadius="30" Grid.Column="3" Grid.Row="2" RenderTransformOrigin="0.5,0.5 ">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Trabant" FontSize="20" FontFamily="Rockwell" Foreground="Gray" FontStyle="Oblique" TextAlignment="Center"/>
+        </Border>
+
+
+
+    </Grid>
+</Window>
